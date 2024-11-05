@@ -10,13 +10,6 @@ class GildedRose {
     public void updateQuality() {
         for (Item item : items) {
             switch (item.name) {
-                case "Aged Brie":
-                    item.increaseQualityByOne();
-                    item.sellIn = item.sellIn - 1;
-                    if (item.sellIn < 0) {
-                        item.increaseQualityByOne();
-                    }
-                    break;
                 case "Backstage passes to a TAFKAL80ETC concert":
                     item.increaseQualityByOne();
                     if (item.sellIn < 11) {
